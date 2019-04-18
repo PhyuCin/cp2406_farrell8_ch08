@@ -17,7 +17,7 @@ public class FixDebugEight3
                 "C - Colonial, a two-story\n" +
                 "Enter floorPlans letter";
         entry = JOptionPane.showInputDialog(null, prompt);
-        plan = entry.charAt(0);
+        plan = entry.toUpperCase().charAt(0);
         for(x = 0; x < floorPlans.length; ++x)
             if(plan == floorPlans[x])
                 fp = x;
@@ -26,12 +26,9 @@ public class FixDebugEight3
                     "Invalid floor plan code entered");
         else
         {
-            if(fp > floorPlans.length - 1)
-                fp = fp - floorPlans.length;
             JOptionPane.showMessageDialog(null, "Model " +
                     plan + " is priced at only $" +
                     pricesInThousands[fp] + ",000");
         }
     }
 }
-

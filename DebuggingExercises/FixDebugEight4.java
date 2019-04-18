@@ -6,7 +6,7 @@ public class FixDebugEight4
    public static void main(String[] args)
    {
       int x = 0, y;
-      String array[] = new String[100];
+      String[] array = new String[100];
       String entry;
       final String STOP = "XXX";
       StringBuffer message = new
